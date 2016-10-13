@@ -38,4 +38,13 @@
         android:id="@+id/saveStateBtn"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="On Config"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/submitBtn"
+        android:layout_alignEnd="@+id/submitBtn"
+        android:id="@+id/configBtn" />
 </RelativeLayout>

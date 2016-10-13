@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private Button submitBtn;
     private EditText nameEditText;
     private Button saveStateButton;
+    private Button configBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         submitBtn =(Button) findViewById(R.id.submitBtn);
         nameEditText =(EditText) findViewById(R.id.nameEditText);
         saveStateButton = (Button) findViewById(R.id.saveStateBtn);
+        configBtn = (Button) findViewById(R.id.configBtn);
 
         submitBtn.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -35,6 +37,18 @@ public class MainActivity extends AppCompatActivity {
                 moveToSaveStateActivity();
             }
         });
+
+        configBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                moveToConfigActivity();
+            }
+        });
+    }
+
+    private void moveToConfigActivity(){
+        Intent intent = new Intent(MainActivity.this,ConfigActivity.class);
+        startActivity(intent);
     }
 
     private void moveToSaveStateActivity(){
