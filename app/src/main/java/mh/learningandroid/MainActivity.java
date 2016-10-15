@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText nameEditText;
     private Button saveStateButton;
     private Button configBtn;
+    private Button formBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         nameEditText =(EditText) findViewById(R.id.nameEditText);
         saveStateButton = (Button) findViewById(R.id.saveStateBtn);
         configBtn = (Button) findViewById(R.id.configBtn);
+        formBtn = (Button) findViewById(R.id.formBtn);
 
         submitBtn.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -44,6 +46,19 @@ public class MainActivity extends AppCompatActivity {
                 moveToConfigActivity();
             }
         });
+
+        formBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                moveToFormActivity();
+            }
+        });
+    }
+
+    private void moveToFormActivity(){
+        Intent intent = new Intent(MainActivity.this,FormActivity.class);
+        intent.putExtra("message","hi there");
+        startActivity(intent);
     }
 
     private void moveToConfigActivity(){

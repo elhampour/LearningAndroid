@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LearningAndroid</string>
+    <string name="sign_up_form_title">فرم ثبت نام</string>
+    <string name="enter_name">نام خود را وارد نمایید</string>
+    <string name="enter_family">نام خانوادکی خود را وارد نمایید</string>
+    <string name="enter_mobile">موبایل خود را وارد نمایید</string>
+    <string name="enter_password">رمز عبور خود را وارد نمایید</string>
+    <string name="sign_up_button">ثبت نام</string>
+</resources>

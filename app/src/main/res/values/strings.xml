@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">LearningAndroid</string>
+    <string name="sign_up_form_title">Sign Up Form</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_family">Enter family</string>
+    <string name="enter_mobile">Enter mobile</string>
+    <string name="enter_password">Enter pass</string>
+    <string name="sign_up_button">Sign up</string>
 </resources>
